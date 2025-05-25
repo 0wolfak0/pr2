@@ -162,11 +162,8 @@
         android:id="@+id/button2"
         android:layout_width="153dp"
         android:layout_height="66dp"
-<<<<<<< HEAD
-        android:layout_marginEnd="16dp"
-=======
->>>>>>> c7606140166bd29dd96c56df128a369413cd9f6c
-        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:text="submit"
         android:textSize="24sp"
         android:textStyle="bold"
