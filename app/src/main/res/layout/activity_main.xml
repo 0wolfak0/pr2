@@ -13,14 +13,22 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="91dp"
+<<<<<<< HEAD
         app:layout_constraintBottom_toTopOf="@+id/button1"
+=======
+        app:layout_constraintBottom_toTopOf="@+id/button"
+>>>>>>> 9cc41b80ee6cc05723fec7e3efa0d5f6da0169ce
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rrr" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/button1"
+=======
+        android:id="@+id/button"
+>>>>>>> 9cc41b80ee6cc05723fec7e3efa0d5f6da0169ce
         android:layout_width="296dp"
         android:layout_height="70dp"
         android:layout_marginStart="44dp"
