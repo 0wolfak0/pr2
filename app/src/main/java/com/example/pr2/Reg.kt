@@ -3,6 +3,7 @@ package com.example.pr2
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +17,11 @@ class Reg : AppCompatActivity() {
         val button5 = findViewById<Button>(R.id.button5)
         button5.setOnClickListener {
             val intent = Intent(this, Locate::class.java)
+            startActivity(intent)
+        }
+        val textView14: TextView = findViewById(R.id.textView14)
+        textView14.setOnClickListener {
+            val intent = Intent(this, SecondActivity::class.java)
             startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
