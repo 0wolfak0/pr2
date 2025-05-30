@@ -38,23 +38,24 @@
 
     <EditText
         android:id="@+id/editTextText7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="258dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="23dp"
-        android:layout_marginBottom="540dp"
+        android:layout_marginBottom="82dp"
         android:ems="10"
         android:hint="ENTER YOUR PHONE NUMBER "
         android:inputType="text"
         android:textColorHint="#9D8181"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="71dp"
-        android:layout_height="28dp"
+        android:layout_width="68dp"
+        android:layout_height="37dp"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="29dp"
         android:text="PHONE:"
@@ -65,5 +66,28 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/editTextText7"
         app:layout_constraintEnd_toStartOf="@+id/editTextText7"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="437dp"
+        android:text="new to the app?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="59dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="141dp"
+        android:text="sign up"
+        android:textColor="#03A9F4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
