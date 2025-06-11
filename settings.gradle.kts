@@ -1,3 +1,4 @@
+// ONLY ONE COPY OF THIS CONTENT SHOULD EXIST IN YOUR PROJECT
 pluginManagement {
     repositories {
         google {
@@ -9,6 +10,7 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven { url = uri("https://maven.google.com") }  // Explicit Google Maven
     }
 }
 
@@ -19,11 +21,10 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 
-    // Corrected version catalog declaration
+    // ONLY ONE VERSION CATALOG DEFINITION
     versionCatalogs {
-        libs {
-            // Specify the correct path to your TOML file
-            from('libs.versions.toml')
+        create("libs") {
+            from(files("gradle/libs.versions.toml"))
         }
     }
 }

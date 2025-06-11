@@ -6,11 +6,16 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Button to trigger location request -->
     <Button
         android:id="@+id/locationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Get Location" />
 
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Location will appear here" />
 </LinearLayout>
