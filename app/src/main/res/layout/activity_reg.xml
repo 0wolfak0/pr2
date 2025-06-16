@@ -14,39 +14,40 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginTop="41dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="326dp"
         android:text="SIGN UP"
         android:textColor="#F44336"
         android:textSize="34sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText6"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="86dp"
-        android:layout_height="31dp"
+        android:layout_width="114dp"
+        android:layout_height="39dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="143dp"
         android:layout_marginEnd="27dp"
         android:layout_marginBottom="81dp"
         android:text="USERNAME"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="#F44336"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editTextText6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229" />
 
     <EditText
         android:id="@+id/editTextText6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginBottom="72dp"
+        android:layout_width="185dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="70dp"
         android:ems="10"
         android:hint="ENTER A USERNAME "
         android:inputType="text"
@@ -56,49 +57,78 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="241dp"
+        android:layout_marginBottom="438dp"
         android:ems="10"
         android:hint="ENTER PHONE NUMBER "
         android:inputType="phone"
         android:textColor="#F44336"
         android:textColorHint="#B48E8E"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6"
+        app:layout_constraintVertical_bias="0.557" />
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="25dp"
+        android:layout_width="113dp"
+        android:layout_height="33dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="448dp"
+        android:layout_marginBottom="131dp"
         android:text="PHONE"
         android:textAlignment="center"
         android:textColor="#F44336"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="149dp"
         android:text="REGISTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="159dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="292dp"
+        android:text="already have an accout?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.985" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="69dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="292dp"
+        android:text="sign in"
+        android:textColor="#03A9F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
